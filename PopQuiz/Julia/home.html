@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link type="text/css" rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <div id="capa">
+            <div id="menu">
+            <ul>
+                <li><a href="home.html">INÍCIO</a></li>
+                <li><a href="">QUIZ</a></li>
+            </ul>
+            </div>
+            
+            <div class="titulo">
+                PopQuiz
+            </div>
+            <p class="slogan">SEJA BEM-VINDO AO PASSADO</p>
+        </div>
+    </header>
+
+    <section class="conteudo">
+
+        <div class="conteudo-que-invade-a-capa">
+            <p class="textoefeito">TESTE TODOS OS SEUS CONHECIMENTOS SOBRE OS ANOS 80 E 90!</p>
+        </div>
+
+    </section>
+
+    <section class="carrossel">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a class="quiz-link" href="quiz1/index.html">
+                        <div class="testimonialBox">
+                            <div class="content">
+                                <h1>O QUANTO VOCÊ SABE SOBRE <br><span style="color: rgb(255, 174, 221); font-size: 35px;">WHITNEY HOUSTON</span>?</h1>
+                                <div class="details">
+                                    <div class="imgBx">
+                                        <img src="user1.jpg">
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="quiz-link" href="quiz2/index.html">
+                        <div class="testimonialBox">
+                            <div class="content">
+                                <h1>VOCÊ CONHECE OS <span style="color: rgb(255, 184, 130); font-size: 35px;">FILMES</span> DOS ANOS<span style="color: rgb(252, 255, 70); font-size: 35px;"> 80 E 90</span>?</h1>
+                                <div class="details">
+                                    <div class="imgBx">
+                                        <img src="user2.webp">
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="quiz-link" href="quiz3/index.html">
+                        <div class="testimonialBox">
+                            <div class="content">
+                                <h1>O QUANTO VOCÊ SABE SOBRE<span style="color: rgb(255, 213, 75); font-size: 35px;"> FRIENDS</span>?</h1>
+                                <div class="details">
+                                    <div class="imgBx">
+                                        <img src="user3.webp">
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+
+
+window.onload = () => { 
+    
+    var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true, //quando passar o mouse
+        centeredSlides: true, //slide centralizado
+        slidesPerView: "auto", //
+        coverflowEffect: {
+        rotate: 0, //girar
+        stretch: 0, //esticar
+        depth: 100, //profundidade
+        modifier: 1,
+        slideShadows: true,
+        },
+        loop: true,
+    });
+
+}
+
+
+</script>
